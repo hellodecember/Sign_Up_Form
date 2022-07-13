@@ -1,0 +1,65 @@
+<!-- Written by Autumn Arnold -->
+<!-- Date: 6/12/2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;700">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="banner">
+                <img id="pin" src="assets/pin.png" alt="logo" />
+                <h1 id="title">Omale</h1>
+            </div>
+            <p>Photo by <a href="https://unsplash.com/@thevantagepoint718">Lerone Pieters</a> on <a href="https://unsplash.com">Unsplash</a></p>
+        </div>
+    
+        <div class="right-column">
+            <div class="intro-text">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. <br /> Sign up <i>now</i> to get started.
+                </p>
+                <p>You know you want to.</p>
+                <p>Let's do this!</p>
+            </div>
+            <form class="form">
+                <div class="input">
+                    <label for="fname" id="fname" name="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" />
+                </div>
+                <div class="input">
+                    <label for="lname" id="lname" name="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" />
+                </div>
+                <div class="input">
+                    <label for="email" id="email" name="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+                <div class="input">
+                    <label for="phone" id="phone" name="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
+                </div>
+                <div class="input">
+                    <label for="password" id="password" name="password">Password</label>
+                    <input type="password" id="password" name="password" required />
+                </div>
+                <div class="input">
+                    <label for="confirm_password" id="confirm_password" name="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required />
+                </div>
+                <input class="button" type="submit" value="Create Account" />
+                <input class="button" type="reset" value="Reset" />
+            </form>
+            <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
