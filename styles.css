@@ -125,7 +125,7 @@ input[type=submit], input[type=reset] {
 }
 
 input[type=submit] {
-    width: 30%;
+    width: 200px;
     margin-right: 10%;
     height: 60px;
 }
@@ -137,4 +137,56 @@ input[type=submit] {
 
 .right-column a:hover {
     color: beige;
+}
+
+/************************************************/
+/*            For smaller screens               */
+/************************************************/
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-flow: column;
+        text-align: center;
+        grid-template-columns: 100vw;
+    }
+
+    .left-column {
+        background-size: 100vw;
+        display: flex;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .banner {
+        gap: 10px;
+        position: static;
+        width: 100vw;
+    }
+
+    #pin {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .left-column p {
+        display: none;
+    }
+
+    .right-column {
+        width: auto;
+        height: auto;
+        padding: 0 40px;
+    }
+
+    .right-column .input {
+        width: 100%;
+        justify-content: center;
+    }
+
+    input[type=submit] {
+        width: 200px;
+        margin-right: 0;
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+    }
 }
