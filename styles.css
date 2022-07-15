@@ -110,8 +110,7 @@ input[type=email], input[type=tel] {
 
 input[type=text]:focus, input[type=password]:focus,
 input[type=email]:focus, input[type=tel]:focus {
-    border: 3px solid #ac978a;
-    outline: none;
+    outline: #ac978a solid 3px;
 }
 
 input[type=submit], input[type=reset] {
@@ -128,6 +127,7 @@ input[type=submit], input[type=reset] {
 input[type=submit] {
     width: 30%;
     margin-right: 10%;
+    height: 60px;
 }
 
 .right-column a {
