@@ -1,4 +1,4 @@
-# The Odin Project: Sign_Up_Form
+# The Odin Project: Sign Up Form
 
 Live Demo: https://hellodecember.github.io/Sign_Up_Form
 
